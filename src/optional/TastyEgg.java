@@ -6,7 +6,7 @@ public class TastyEgg {
 	public static void main(String[] args) {
 		KinderSurprise myKinderSurprise = new KinderSurprise(new Egg(new Toy()));
 		// Your mission: Find out what toy is inside your KinderSurprise.
-		
+		System.out.println(myKinderSurprise.getKinderSurpriseContents().getEggContents().getToyName());
 
 	}
 }
@@ -21,7 +21,7 @@ class KinderSurprise {
 	Egg getKinderSurpriseContents() {
 		// ADD CODE HERE
 		
-		return null;
+		return this.egg;
 	}
 }
 
@@ -36,7 +36,7 @@ class Egg {
 	Toy getEggContents() {
 		// ADD CODE HERE
 		
-		return null;
+		return this.toy;
 	}
 
 }
